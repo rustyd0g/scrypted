@@ -191,6 +191,20 @@ class AmcrestCamera extends RtspSmartCamera implements VideoCameraConfiguration,
             else if (event === AmcrestEvent.MotionStop) {
                 // use resetMotionTimeout
             }
+            if (event === AmcrestEvent.CrossLineStart) {
+                this.motionDetected = true;
+                resetMotionTimeout();
+            }
+            else if (event === AmcrestEvent.CrossLineStop) {
+                // use resetMotionTimeout
+            }
+            if (event === AmcrestEvent.CrossRegionStart) {
+                this.motionDetected = true;
+                resetMotionTimeout();
+            }
+            else if (event === AmcrestEvent.CrossRegionStop) {
+                // use resetMotionTimeout
+            }
             else if (event === AmcrestEvent.AudioStart) {
                 this.audioDetected = true;
             }

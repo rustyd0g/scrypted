@@ -5,6 +5,10 @@ import { getDeviceInfo } from './probe';
 export enum AmcrestEvent {
     MotionStart = "Code=VideoMotion;action=Start",
     MotionStop = "Code=VideoMotion;action=Stop",
+    CrossLineStart="Code=CrossLineDetection;action=Start",
+    CrossLineStop="Code=CrossLineDetection;action=Stop",
+    CrossRegionStart="Code=CrossRegionDetection;action=Start",
+    CrossRegionStop="Code=CrossRegionDetection;action=Stop",
     AudioStart = "Code=AudioMutation;action=Start",
     AudioStop = "Code=AudioMutation;action=Stop",
     TalkInvite = "Code=_DoTalkAction_;action=Invite",
