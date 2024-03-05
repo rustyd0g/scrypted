@@ -24,7 +24,7 @@
       "camera"
    ],
    "scrypted": {
-      "name": "Amcrest Plugin",
+      "name": "Amcrest Plugin (RL)",
       "type": "DeviceProvider",
       "interfaces": [
          "DeviceProvider",
